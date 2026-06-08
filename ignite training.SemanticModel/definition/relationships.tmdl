@@ -1,0 +1,216 @@
+relationship 69523a0d-54cf-4811-9aa6-a0620bd4d872
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date_training.calendar_date
+	toColumn: LocalDateTable_95f0934f-fa88-4ed1-b049-66c7990f7969.Date
+
+relationship 916a4fc7-aa51-4d81-a4cd-5f75b43a2ca3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date_training.calendar_week_start_date
+	toColumn: LocalDateTable_34c38ff6-9f7e-432d-a30d-65bd07afeda3.Date
+
+relationship 5292faed-bf60-4497-b994-8a8664483b0d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date_training.calendar_week_start_date_rev_sort
+	toColumn: LocalDateTable_da3ec38d-b31d-489d-ba27-d429025ada64.Date
+
+relationship c6bba671-7993-4304-97c1-465fd16c0aad
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date_training.calendar_week_end_date
+	toColumn: LocalDateTable_f1bcc85c-6437-45e1-967a-9509df20a8cb.Date
+
+relationship 8fa8074b-1c43-4e89-b2ae-b42b0cadf107
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date_training.calendar_week_end_date_rev_sort
+	toColumn: LocalDateTable_305f4097-9d33-42b0-83fb-167c19112cc4.Date
+
+relationship b85b03e2-6025-4a0d-a9c6-f8dfae347a0c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date_training.calendar_monday_week_end_date
+	toColumn: LocalDateTable_b508d535-1739-40dd-be0b-6ac3da1e96e3.Date
+
+relationship c9df4d4f-e145-4dbf-8e99-33ab2bc5734c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date_training.calendar_tuesday_week_end_date
+	toColumn: LocalDateTable_cc6f6ec0-38a4-4d54-acfb-4ef58e07ff59.Date
+
+relationship 5aee8695-09a2-4790-99e9-08ffe88277d1
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date_training.calendar_wednesday_week_end_date
+	toColumn: LocalDateTable_55377227-bc1c-4c70-8fd2-34613709a057.Date
+
+relationship 4959b0f5-b5fc-47d4-aeed-32a38a0f9072
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date_training.calendar_thursday_week_end_date
+	toColumn: LocalDateTable_67ec5bde-6b3d-4295-b925-a951a9dec252.Date
+
+relationship 93bfeea2-85b7-47f5-a846-1a8f2fa72da8
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date_training.calendar_friday_week_end_date
+	toColumn: LocalDateTable_8f0b2a09-70ab-4ed8-9d16-e07eb564c302.Date
+
+relationship da157ddb-f3b0-493d-8d13-804310fc27ca
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date_training.calendar_saturday_week_end_date
+	toColumn: LocalDateTable_abf3a2bd-3a33-4a06-a345-b5bcb138206e.Date
+
+relationship 06c4aaad-79e5-4a95-a28a-2b0b992d176c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date_training.calendar_month_start_date
+	toColumn: LocalDateTable_f12c8be6-55a1-4004-aeb2-4f2427249b04.Date
+
+relationship 5d365ada-7edc-4894-b784-92ada4878544
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date_training.calendar_month_end_date
+	toColumn: LocalDateTable_b62a8d9d-e75c-4bd3-86bf-1c4896d648e1.Date
+
+relationship 89c8bc40-f8e9-4100-9cb0-a70f2a67e2e2
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date_training.calendar_quarter_start_date
+	toColumn: LocalDateTable_3bb4f08d-5c47-433c-bce0-00a1f9d07996.Date
+
+relationship 0ab0a185-8266-4342-8916-9c2ba59cd8a2
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date_training.calendar_quarter_end_date
+	toColumn: LocalDateTable_51270cf7-3643-4d5a-878d-35172e33d178.Date
+
+relationship cff346c5-bc2b-4ca5-9285-6c88505d1d6e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date_training.calendar_year_start_date
+	toColumn: LocalDateTable_ef134188-d24a-45a1-8aa7-8cc9427b6d52.Date
+
+relationship b9962b05-db2c-4d4c-b786-d5721bad7f03
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date_training.calendar_year_end_date
+	toColumn: LocalDateTable_d0f0cec3-60bf-48bd-890a-17c7d9b05983.Date
+
+relationship 033efba3-773b-47a2-8d1b-087127e151f2
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date_training.fiscal_week_start_date
+	toColumn: LocalDateTable_9cb48e28-1793-465f-aa5d-f19c2cf4b1bc.Date
+
+relationship 5d7f068e-75c4-45fc-981c-f7ea36dbc918
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date_training.fiscal_week_end_date
+	toColumn: LocalDateTable_5e39b1cb-202e-4daa-8c92-1ec95873226c.Date
+
+relationship ec6864c3-1064-4729-9cdf-72198ceb0932
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date_training.fiscal_period_start_date
+	toColumn: LocalDateTable_1def9dd4-c272-4b97-9403-e3755afa11ad.Date
+
+relationship 1f50c880-07b5-4be8-b26f-cbe526639883
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date_training.fiscal_period_end_date
+	toColumn: LocalDateTable_3d2912ad-e426-4fc8-82d9-591b2e5c1abf.Date
+
+relationship dc6c355b-8230-46dc-991e-c9e8bcdbb071
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date_training.fiscal_quarter_start_date
+	toColumn: LocalDateTable_996e31bc-3b3c-4123-b404-ee1d35adb9c6.Date
+
+relationship 54ed2c73-5f1b-4ac4-8cd8-c4947684b82b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date_training.fiscal_quarter_end_date
+	toColumn: LocalDateTable_4cc9cd48-60e4-409b-9a4c-2947244b49a6.Date
+
+relationship 05ec35ec-9cd6-4419-942e-f84fba2494e6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date_training.fiscal_year_start_date
+	toColumn: LocalDateTable_abe0f1f1-0efe-488a-a8ab-e434e18fb780.Date
+
+relationship 22c56f4b-c251-4461-b24d-f009fa5095be
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date_training.fiscal_year_end_date
+	toColumn: LocalDateTable_2054539c-1bc0-41b6-8ed1-ae6a00ea6f3d.Date
+
+relationship 8751d386-7daa-404a-8d4c-eb159b54e805
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date_training.iri_week_ending
+	toColumn: LocalDateTable_880b35f6-ec8b-44f5-a056-4c497006078d.Date
+
+relationship 4270e6b0-ee66-4f10-a8d0-b040e5f5fc60
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date_training.iri_period_ending
+	toColumn: LocalDateTable_daeab90c-2419-41fd-9461-61ca8568594b.Date
+
+relationship 6ab534cf-fd99-41a5-9209-eb664b0adc7c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date_training.iri_year_ending
+	toColumn: LocalDateTable_7a27425c-f120-4ddd-9d61-dbf04dc9b10b.Date
+
+relationship e9f4239d-179b-4637-83af-2b3ec28348c1
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date_training.created_datetime
+	toColumn: LocalDateTable_ba10f171-d4ca-4b8e-8e20-539afda4e608.Date
+
+relationship 16f7f853-6815-415f-bb7d-1f011befc2fc
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date_training.updated_datetime
+	toColumn: LocalDateTable_674856dc-a0f8-472f-a2c0-8f5e5ea9eb09.Date
+
+relationship fd5727d4-81bc-4e78-92fa-ffc5a9824b4d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: EPOS.created_datetime
+	toColumn: LocalDateTable_67b53d65-3f08-4492-9036-63a91cdf32c0.Date
+
+relationship cafdde49-8de1-48e0-a7f0-77f43a975c2f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: EPOS.updated_datetime
+	toColumn: LocalDateTable_f88e8c89-9a22-4705-891b-93f9bb7486cb.Date
+
+relationship 31287f5d-e1bb-449a-ab12-b84f27d129dc
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Customer.created_datetime
+	toColumn: LocalDateTable_b9d3bc02-3797-477e-aff2-2187b3465749.Date
+
+relationship 10d2f07b-9e9d-4fb6-9ccc-39c18911a25e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Customer.updated_datetime
+	toColumn: LocalDateTable_f457604c-a82f-433f-8720-5f2e95dec37f.Date
+
+relationship 3e7e23aa-c088-4e33-80da-52f0364b7903
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_product_training.created_datetime
+	toColumn: LocalDateTable_56831875-d884-43a5-b008-9c993b743511.Date
+
+relationship c68c0983-320f-4c2a-b384-40e65f3b40f3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_product_training.updated_datetime
+	toColumn: LocalDateTable_815ff1ce-2bc8-45c7-9da9-40ed5aaa33d7.Date
+
+relationship 0be318d0-43ca-4780-a3f9-ea1ba6a3a2ca
+	joinOnDateBehavior: datePartOnly
+	fromColumn: product_mapping_bridge_training.last_update_date
+	toColumn: LocalDateTable_b27f8d10-6d8c-4dfd-a096-afb568e134a3.Date
+
+relationship f6b37f2d-f9cb-40fc-bbfa-6f9f9de85845
+	joinOnDateBehavior: datePartOnly
+	fromColumn: product_mapping_bridge_training.last_update_datetime
+	toColumn: LocalDateTable_2d699079-8726-46fc-be3f-3e4548e60f1f.Date
+
+relationship e6744fc0-3124-4b7a-93ef-fd63665056d8
+	joinOnDateBehavior: datePartOnly
+	fromColumn: product_mapping_bridge_training.created_datetime
+	toColumn: LocalDateTable_b66c7f68-921b-420e-9b96-9afcd1c3379a.Date
+
+relationship 11a0aedb-68bc-4dcb-b4e0-b1170ffdf687
+	joinOnDateBehavior: datePartOnly
+	fromColumn: product_mapping_bridge_training.updated_datetime
+	toColumn: LocalDateTable_7675670d-640a-43b8-86d8-d3698dc648d8.Date
+
+relationship AutoDetected_338bbf89-3d80-4952-8609-d258195b4bb7
+	fromColumn: EPOS.product_bridge_key
+	toColumn: product_mapping_bridge_training.product_bridge_key
+
+relationship AutoDetected_20040fa6-4362-4be4-80e9-60b8e30db75c
+	fromColumn: product_mapping_bridge_training.product_key
+	toColumn: dim_product_training.product_key
+
+relationship e812f45e-c8f5-74db-1bc3-a6a5458fc4b7
+	fromColumn: EPOS.customer_site_key
+	toColumn: Customer.customer_key
+
+relationship af6c8c1c-d3b4-ced6-e0a2-d3f50fa64782
+	fromColumn: EPOS.transaction_date
+	toColumn: dim_date_training.calendar_date
+

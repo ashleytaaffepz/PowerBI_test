@@ -1,0 +1,178 @@
+table EPOS
+	lineageTag: 67b11f3a-5d6b-4824-ba0c-e6d11a53bd0c
+
+	column fact_key
+		dataType: string
+		lineageTag: 1d8cf308-08e4-44f3-a2c3-14cf8a3aac23
+		summarizeBy: none
+		sourceColumn: fact_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column transaction_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 8e0074a1-3285-473c-81f1-eca2cd757457
+		summarizeBy: none
+		sourceColumn: transaction_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column transaction_date_key
+		dataType: int64
+		formatString: 0
+		lineageTag: ad258f20-ff0a-4946-ad6f-9a92b171a554
+		summarizeBy: sum
+		sourceColumn: transaction_date_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer_site_key
+		dataType: int64
+		formatString: 0
+		lineageTag: 52a1cc94-1002-4eb4-a5d2-528c283d0f9f
+		summarizeBy: none
+		sourceColumn: customer_site_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_bridge_key
+		dataType: int64
+		formatString: 0
+		lineageTag: 378000b4-f27d-4402-81d5-2b0180c7ebe5
+		summarizeBy: none
+		sourceColumn: product_bridge_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column postcode_demographic_key
+		dataType: int64
+		formatString: 0
+		lineageTag: 78863459-e8eb-4d70-b86b-a9586d9292fe
+		summarizeBy: sum
+		sourceColumn: postcode_demographic_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column bundle_key
+		dataType: int64
+		formatString: 0
+		lineageTag: 46f1ff8a-8547-43ee-8edf-b3d0ef10cfed
+		summarizeBy: sum
+		sourceColumn: bundle_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column created_by
+		dataType: string
+		lineageTag: e29d0f00-33cc-4bcb-86cf-1b304aaca982
+		summarizeBy: none
+		sourceColumn: created_by
+
+		annotation SummarizationSetBy = Automatic
+
+	column created_datetime
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 898677a3-0083-45ff-89e4-dcb745391d30
+		summarizeBy: none
+		sourceColumn: created_datetime
+
+		variation Variation
+			isDefault
+			relationship: fd5727d4-81bc-4e78-92fa-ffc5a9824b4d
+			defaultHierarchy: LocalDateTable_67b53d65-3f08-4492-9036-63a91cdf32c0.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column created_by_filename
+		dataType: string
+		lineageTag: 8bef8154-d791-420c-a96a-b939652a18d5
+		summarizeBy: none
+		sourceColumn: created_by_filename
+
+		annotation SummarizationSetBy = Automatic
+
+	column updated_by
+		dataType: string
+		lineageTag: cf57f1ee-c86b-440c-8527-e12d4c163f6f
+		summarizeBy: none
+		sourceColumn: updated_by
+
+		annotation SummarizationSetBy = Automatic
+
+	column updated_datetime
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 6d5b22bd-f169-4e1a-b78b-989f37ce9581
+		summarizeBy: none
+		sourceColumn: updated_datetime
+
+		variation Variation
+			isDefault
+			relationship: cafdde49-8de1-48e0-a7f0-77f43a975c2f
+			defaultHierarchy: LocalDateTable_f88e8c89-9a22-4705-891b-93f9bb7486cb.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column updated_by_filename
+		dataType: string
+		lineageTag: 2a4c17a2-bbc6-4dd8-985a-8ec5c58af8c1
+		summarizeBy: none
+		sourceColumn: updated_by_filename
+
+		annotation SummarizationSetBy = Automatic
+
+	column source_system_id
+		dataType: string
+		lineageTag: 41224b87-fe51-47b8-a41c-7365a5a02b6b
+		summarizeBy: none
+		sourceColumn: source_system_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column sell_out_amt
+		dataType: double
+		lineageTag: 1e983840-e910-4e25-91b4-eee6702a1b01
+		summarizeBy: sum
+		sourceColumn: sell_out_amt
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column sell_out_unit_qty
+		dataType: double
+		lineageTag: 39f734ad-2712-4d7c-b74f-a1a0fe5b9499
+		summarizeBy: sum
+		sourceColumn: sell_out_unit_qty
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column bundle_unit_qty
+		dataType: double
+		lineageTag: c80cc6cb-92b2-424e-b7b1-2971e9cc12dd
+		summarizeBy: sum
+		sourceColumn: bundle_unit_qty
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition EPOS = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("5khzkpaq5tiupmyx5w4mdwtzvi-rb65gsj3elkuzjk5mtlvca74s4.datawarehouse.fabric.microsoft.com", "Commercial_Training_Data"),
+				    dbo_fact_daily_epos_transaction_training = Source{[Schema="dbo",Item="fact_daily_epos_transaction_training"]}[Data]
+				in
+				    dbo_fact_daily_epos_transaction_training
+
+	changedProperty = Name
+
+	annotation PBI_ResultType = Table
+

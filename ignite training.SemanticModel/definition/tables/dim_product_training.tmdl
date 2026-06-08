@@ -1,0 +1,274 @@
+table dim_product_training
+	lineageTag: 5fb28978-e52b-491f-942e-a750a3736eb5
+
+	column product_key
+		dataType: int64
+		formatString: 0
+		lineageTag: eac0e9b7-ef9e-48ac-ad17-97cc9854903e
+		summarizeBy: none
+		sourceColumn: product_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column pz_sku
+		dataType: int64
+		formatString: 0
+		lineageTag: 11be2015-fbbb-4ae7-a114-de5ab45f9af5
+		summarizeBy: sum
+		sourceColumn: pz_sku
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_desc
+		dataType: string
+		lineageTag: a87a6721-cc4e-4a52-801b-5cf1f4a11117
+		summarizeBy: none
+		sourceColumn: product_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column full_product_desc
+		dataType: string
+		lineageTag: f1f9bd18-04af-4d15-ae62-dad66cc32dca
+		summarizeBy: none
+		sourceColumn: full_product_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column category_name
+		dataType: string
+		lineageTag: 85dd8f95-c036-4ae2-83da-e268e210c7bd
+		summarizeBy: none
+		sourceColumn: category_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column brand_name
+		dataType: string
+		lineageTag: 47212b89-088c-4ac5-8de5-8516106cd3e3
+		summarizeBy: none
+		sourceColumn: brand_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column sub_brand_name
+		dataType: string
+		lineageTag: a82be63d-30bd-41ee-bafa-7a02e055fd18
+		summarizeBy: none
+		sourceColumn: sub_brand_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column franchise_name
+		dataType: string
+		lineageTag: 3e1cae6d-6907-4e5a-94ff-a4232f1073cb
+		summarizeBy: none
+		sourceColumn: franchise_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column format_name
+		dataType: string
+		lineageTag: 55d4c669-0f25-48d5-a51b-4d18591b76d8
+		summarizeBy: none
+		sourceColumn: format_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column brand_format_size_desc
+		dataType: string
+		lineageTag: e05c3a25-7e40-4105-aaa3-06adc8e156da
+		summarizeBy: none
+		sourceColumn: brand_format_size_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column EAN
+		dataType: int64
+		formatString: 0
+		lineageTag: a06e2386-4d72-4ee4-97b6-5d69ddc9da1e
+		summarizeBy: sum
+		sourceColumn: EAN
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_size_desc
+		dataType: string
+		lineageTag: d65b234d-f8be-468c-840b-fe8009611bf9
+		summarizeBy: none
+		sourceColumn: product_size_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_size_units
+		dataType: int64
+		formatString: 0
+		lineageTag: 4c172ebf-8cf2-46cb-bc42-d965cd606789
+		summarizeBy: sum
+		sourceColumn: product_size_units
+
+		annotation SummarizationSetBy = Automatic
+
+	column uom_short
+		dataType: string
+		lineageTag: 36a48f94-f75c-40c8-a216-bdacb379b73c
+		summarizeBy: none
+		sourceColumn: uom_short
+
+		annotation SummarizationSetBy = Automatic
+
+	column brand_portfolio_name
+		dataType: string
+		lineageTag: 063c9979-e6f3-4121-b0c4-bea92a6fb29b
+		summarizeBy: none
+		sourceColumn: brand_portfolio_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column SKU_family_desc
+		dataType: string
+		lineageTag: 33af48fb-6102-4cd2-841d-935ae73ebbd0
+		summarizeBy: none
+		sourceColumn: SKU_family_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column _product_desc
+		dataType: string
+		lineageTag: 30e49de5-a812-4eca-be8c-d92ddee33113
+		summarizeBy: none
+		sourceColumn: _product_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column _category_name
+		dataType: string
+		lineageTag: 7e4d7743-2fe9-4836-a8fe-8f15edf34b27
+		summarizeBy: none
+		sourceColumn: _category_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column _brand_name
+		dataType: string
+		lineageTag: d6785d68-dc14-49ef-bf75-1372c9f9a61e
+		summarizeBy: none
+		sourceColumn: _brand_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column _sub_brand_name
+		dataType: string
+		lineageTag: 112f8b42-6eac-46d0-bcac-e665905a68c5
+		summarizeBy: none
+		sourceColumn: _sub_brand_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column _market_category_name
+		dataType: string
+		lineageTag: a74011be-7176-4eb6-b7fe-51ccc3b81e6b
+		summarizeBy: none
+		sourceColumn: _market_category_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column _market_sub_category_name
+		dataType: string
+		lineageTag: 583f5c59-7f79-4141-8e1c-e3d38a27bf6c
+		summarizeBy: none
+		sourceColumn: _market_sub_category_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column _pack_name
+		dataType: string
+		lineageTag: f09a47f3-5a47-4e60-96a3-8f8ad17f1280
+		summarizeBy: none
+		sourceColumn: _pack_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column _product_size_desc
+		dataType: string
+		lineageTag: f89f5845-4152-423e-becc-0a645e1c36d5
+		summarizeBy: none
+		sourceColumn: _product_size_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column created_by
+		dataType: string
+		lineageTag: cad8d1e0-3ae6-490e-9471-bd9c55c73a7f
+		summarizeBy: none
+		sourceColumn: created_by
+
+		annotation SummarizationSetBy = Automatic
+
+	column created_datetime
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: f985fdfe-fe95-42af-9695-cf1e539e40d8
+		summarizeBy: none
+		sourceColumn: created_datetime
+
+		variation Variation
+			isDefault
+			relationship: 3e7e23aa-c088-4e33-80da-52f0364b7903
+			defaultHierarchy: LocalDateTable_56831875-d884-43a5-b008-9c993b743511.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column created_by_filename
+		dataType: string
+		lineageTag: 511aab1c-8e68-4b28-b9c6-12fc358e54b9
+		summarizeBy: none
+		sourceColumn: created_by_filename
+
+		annotation SummarizationSetBy = Automatic
+
+	column updated_by
+		dataType: string
+		lineageTag: 28d128c1-efc2-410d-9839-6d8c9661a6cd
+		summarizeBy: none
+		sourceColumn: updated_by
+
+		annotation SummarizationSetBy = Automatic
+
+	column updated_datetime
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 9c2ce778-5026-4985-a732-1398898d86aa
+		summarizeBy: none
+		sourceColumn: updated_datetime
+
+		variation Variation
+			isDefault
+			relationship: c68c0983-320f-4c2a-b384-40e65f3b40f3
+			defaultHierarchy: LocalDateTable_815ff1ce-2bc8-45c7-9da9-40ed5aaa33d7.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column updated_by_filename
+		dataType: string
+		lineageTag: 010ddf65-d891-41b8-8408-87ad65c2a3b0
+		summarizeBy: none
+		sourceColumn: updated_by_filename
+
+		annotation SummarizationSetBy = Automatic
+
+	column Concat = CONCATENATE( dim_product_training[brand_name] & " - ", dim_product_training[_category_name] )
+		lineageTag: ea89267a-3675-45b6-ac0e-c99b1dff2e38
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_product_training = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("5khzkpaq5tiupmyx5w4mdwtzvi-rb65gsj3elkuzjk5mtlvca74s4.datawarehouse.fabric.microsoft.com", "Commercial_Training_Data"),
+				    dbo_dim_product_training = Source{[Schema="dbo",Item="dim_product_training"]}[Data]
+				in
+				    dbo_dim_product_training
+

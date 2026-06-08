@@ -1,0 +1,64 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-GB
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["dim_date_training","EPOS","Measures Tab","Measures Table","Customer","dim_product_training","product_mapping_bridge_training"]
+
+annotation PBI_ProTooling = ["DaxCopilot_Change_Accepted_In_Desktop"]
+
+ref table dim_date_training
+ref table DateTableTemplate_7be888f5-07a9-48b9-b6fd-925e9d4caaf9
+ref table LocalDateTable_95f0934f-fa88-4ed1-b049-66c7990f7969
+ref table LocalDateTable_34c38ff6-9f7e-432d-a30d-65bd07afeda3
+ref table LocalDateTable_da3ec38d-b31d-489d-ba27-d429025ada64
+ref table LocalDateTable_f1bcc85c-6437-45e1-967a-9509df20a8cb
+ref table LocalDateTable_305f4097-9d33-42b0-83fb-167c19112cc4
+ref table LocalDateTable_b508d535-1739-40dd-be0b-6ac3da1e96e3
+ref table LocalDateTable_cc6f6ec0-38a4-4d54-acfb-4ef58e07ff59
+ref table LocalDateTable_55377227-bc1c-4c70-8fd2-34613709a057
+ref table LocalDateTable_67ec5bde-6b3d-4295-b925-a951a9dec252
+ref table LocalDateTable_8f0b2a09-70ab-4ed8-9d16-e07eb564c302
+ref table LocalDateTable_abf3a2bd-3a33-4a06-a345-b5bcb138206e
+ref table LocalDateTable_f12c8be6-55a1-4004-aeb2-4f2427249b04
+ref table LocalDateTable_b62a8d9d-e75c-4bd3-86bf-1c4896d648e1
+ref table LocalDateTable_3bb4f08d-5c47-433c-bce0-00a1f9d07996
+ref table LocalDateTable_51270cf7-3643-4d5a-878d-35172e33d178
+ref table LocalDateTable_ef134188-d24a-45a1-8aa7-8cc9427b6d52
+ref table LocalDateTable_d0f0cec3-60bf-48bd-890a-17c7d9b05983
+ref table LocalDateTable_9cb48e28-1793-465f-aa5d-f19c2cf4b1bc
+ref table LocalDateTable_5e39b1cb-202e-4daa-8c92-1ec95873226c
+ref table LocalDateTable_1def9dd4-c272-4b97-9403-e3755afa11ad
+ref table LocalDateTable_3d2912ad-e426-4fc8-82d9-591b2e5c1abf
+ref table LocalDateTable_996e31bc-3b3c-4123-b404-ee1d35adb9c6
+ref table LocalDateTable_4cc9cd48-60e4-409b-9a4c-2947244b49a6
+ref table LocalDateTable_abe0f1f1-0efe-488a-a8ab-e434e18fb780
+ref table LocalDateTable_2054539c-1bc0-41b6-8ed1-ae6a00ea6f3d
+ref table LocalDateTable_880b35f6-ec8b-44f5-a056-4c497006078d
+ref table LocalDateTable_daeab90c-2419-41fd-9461-61ca8568594b
+ref table LocalDateTable_7a27425c-f120-4ddd-9d61-dbf04dc9b10b
+ref table LocalDateTable_ba10f171-d4ca-4b8e-8e20-539afda4e608
+ref table LocalDateTable_674856dc-a0f8-472f-a2c0-8f5e5ea9eb09
+ref table EPOS
+ref table LocalDateTable_67b53d65-3f08-4492-9036-63a91cdf32c0
+ref table LocalDateTable_f88e8c89-9a22-4705-891b-93f9bb7486cb
+ref table 'Measures Table'
+ref table Customer
+ref table LocalDateTable_b9d3bc02-3797-477e-aff2-2187b3465749
+ref table LocalDateTable_f457604c-a82f-433f-8720-5f2e95dec37f
+ref table dim_product_training
+ref table LocalDateTable_56831875-d884-43a5-b008-9c993b743511
+ref table LocalDateTable_815ff1ce-2bc8-45c7-9da9-40ed5aaa33d7
+ref table product_mapping_bridge_training
+ref table LocalDateTable_b27f8d10-6d8c-4dfd-a096-afb568e134a3
+ref table LocalDateTable_2d699079-8726-46fc-be3f-3e4548e60f1f
+ref table LocalDateTable_b66c7f68-921b-420e-9b96-9afcd1c3379a
+ref table LocalDateTable_7675670d-640a-43b8-86d8-d3698dc648d8
+
+ref cultureInfo en-US
+

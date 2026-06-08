@@ -1,0 +1,152 @@
+table product_mapping_bridge_training
+	lineageTag: c1bb50b5-946d-42f8-a837-26c9c9500be5
+
+	column product_bridge_key
+		dataType: int64
+		formatString: 0
+		lineageTag: 06313f8f-2843-44f6-b505-8602e89cfe58
+		summarizeBy: none
+		sourceColumn: product_bridge_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_key
+		dataType: int64
+		formatString: 0
+		lineageTag: a78fe0e1-2d9b-4535-b37e-4b6cd3ce7753
+		summarizeBy: none
+		sourceColumn: product_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column entity_name
+		dataType: string
+		lineageTag: 46451c0b-3da7-4072-a664-13a48146d82a
+		summarizeBy: none
+		sourceColumn: entity_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column entity_sku
+		dataType: string
+		lineageTag: 5c8ec7b6-49fb-4a09-a127-bfd045e55f82
+		summarizeBy: none
+		sourceColumn: entity_sku
+
+		annotation SummarizationSetBy = Automatic
+
+	column entity_product_description
+		dataType: string
+		lineageTag: cd3733a5-8908-4c91-bb6c-45a61101a058
+		summarizeBy: none
+		sourceColumn: entity_product_description
+
+		annotation SummarizationSetBy = Automatic
+
+	column last_update_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: c0c0f52d-bc90-4125-99d0-f6974655f4b7
+		summarizeBy: none
+		sourceColumn: last_update_date
+
+		variation Variation
+			isDefault
+			relationship: 0be318d0-43ca-4780-a3f9-ea1ba6a3a2ca
+			defaultHierarchy: LocalDateTable_b27f8d10-6d8c-4dfd-a096-afb568e134a3.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column last_update_datetime
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: a19bce28-706b-4bc0-9955-76767c0b88db
+		summarizeBy: none
+		sourceColumn: last_update_datetime
+
+		variation Variation
+			isDefault
+			relationship: f6b37f2d-f9cb-40fc-bbfa-6f9f9de85845
+			defaultHierarchy: LocalDateTable_2d699079-8726-46fc-be3f-3e4548e60f1f.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_updated_by
+		dataType: string
+		lineageTag: 83a34b54-60fd-4248-a9f9-336ed69d5f35
+		summarizeBy: none
+		sourceColumn: product_updated_by
+
+		annotation SummarizationSetBy = Automatic
+
+	column created_by
+		dataType: string
+		lineageTag: 800a21f8-17af-4295-a554-ac39e1629f5a
+		summarizeBy: none
+		sourceColumn: created_by
+
+		annotation SummarizationSetBy = Automatic
+
+	column created_datetime
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: e02d0a39-cc88-44a1-886d-c46bb21248b7
+		summarizeBy: none
+		sourceColumn: created_datetime
+
+		variation Variation
+			isDefault
+			relationship: e6744fc0-3124-4b7a-93ef-fd63665056d8
+			defaultHierarchy: LocalDateTable_b66c7f68-921b-420e-9b96-9afcd1c3379a.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column created_by_filename
+		dataType: string
+		lineageTag: 306f13c2-2232-461a-8af5-c886f551482c
+		summarizeBy: none
+		sourceColumn: created_by_filename
+
+		annotation SummarizationSetBy = Automatic
+
+	column updated_by
+		dataType: string
+		lineageTag: b586002a-bb69-486f-a594-50c23673a524
+		summarizeBy: none
+		sourceColumn: updated_by
+
+		annotation SummarizationSetBy = Automatic
+
+	column updated_datetime
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: f325f569-7ef5-42e8-97fc-0c27187a3d84
+		summarizeBy: none
+		sourceColumn: updated_datetime
+
+		variation Variation
+			isDefault
+			relationship: 11a0aedb-68bc-4dcb-b4e0-b1170ffdf687
+			defaultHierarchy: LocalDateTable_7675670d-640a-43b8-86d8-d3698dc648d8.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column updated_by_filename
+		dataType: string
+		lineageTag: 9fcea6c9-5717-4225-b74c-318b8fa1da0f
+		summarizeBy: none
+		sourceColumn: updated_by_filename
+
+		annotation SummarizationSetBy = Automatic
+
+	partition product_mapping_bridge_training = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("5khzkpaq5tiupmyx5w4mdwtzvi-rb65gsj3elkuzjk5mtlvca74s4.datawarehouse.fabric.microsoft.com", "Commercial_Training_Data"),
+				    dbo_product_mapping_bridge_training = Source{[Schema="dbo",Item="product_mapping_bridge_training"]}[Data]
+				in
+				    dbo_product_mapping_bridge_training
+

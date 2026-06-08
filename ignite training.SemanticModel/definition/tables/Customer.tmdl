@@ -1,0 +1,107 @@
+table Customer
+	lineageTag: 8da60dff-283a-4eb8-9d36-11c2ee792a5a
+
+	column created_by
+		dataType: string
+		lineageTag: 748ec65e-468a-4765-ba9a-b4c0607ededd
+		summarizeBy: none
+		sourceColumn: created_by
+
+		annotation SummarizationSetBy = Automatic
+
+	column created_datetime
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 3ed0b18a-4b4b-4c1b-8bbe-a59d8efe0a97
+		summarizeBy: none
+		sourceColumn: created_datetime
+
+		variation Variation
+			isDefault
+			relationship: 31287f5d-e1bb-449a-ab12-b84f27d129dc
+			defaultHierarchy: LocalDateTable_b9d3bc02-3797-477e-aff2-2187b3465749.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column created_by_filename
+		dataType: string
+		lineageTag: f25eaf4a-6ab7-42ef-b0db-70e068970735
+		summarizeBy: none
+		sourceColumn: created_by_filename
+
+		annotation SummarizationSetBy = Automatic
+
+	column updated_by
+		dataType: string
+		lineageTag: 142147e1-3ce2-4365-9f8a-95f058e31f93
+		summarizeBy: none
+		sourceColumn: updated_by
+
+		annotation SummarizationSetBy = Automatic
+
+	column updated_datetime
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: d537e97a-f7cd-4289-b352-81dff5c2bd08
+		summarizeBy: none
+		sourceColumn: updated_datetime
+
+		variation Variation
+			isDefault
+			relationship: 10d2f07b-9e9d-4fb6-9ccc-39c18911a25e
+			defaultHierarchy: LocalDateTable_f457604c-a82f-433f-8720-5f2e95dec37f.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column updated_by_filename
+		dataType: string
+		lineageTag: a669f22a-e0e5-4f73-851d-823df901edc5
+		summarizeBy: none
+		sourceColumn: updated_by_filename
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer_key
+		dataType: int64
+		formatString: 0
+		lineageTag: b9c08db4-b00b-4a4c-ad1f-5f377c8bda4f
+		summarizeBy: none
+		sourceColumn: customer_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer_name
+		dataType: string
+		lineageTag: 714960c4-c680-491b-8a66-6618e7a3e346
+		summarizeBy: none
+		sourceColumn: customer_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer_type_desc
+		dataType: string
+		lineageTag: 0a05110e-a39a-4e70-863f-9d6073dc797b
+		summarizeBy: none
+		sourceColumn: customer_type_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column source_system_id
+		dataType: string
+		lineageTag: b086cc79-ae8c-4a73-b28e-88be8a838977
+		summarizeBy: none
+		sourceColumn: source_system_id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Customer = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("5khzkpaq5tiupmyx5w4mdwtzvi-rb65gsj3elkuzjk5mtlvca74s4.datawarehouse.fabric.microsoft.com", "Commercial_Training_Data"),
+				    dbo_dim_customer_training = Source{[Schema="dbo",Item="dim_customer_training"]}[Data]
+				in
+				    dbo_dim_customer_training
+
+	changedProperty = Name
+
