@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "AppBackend",
+    "displayName": "Ash Farbic App"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "21e201c6-521e-95cc-41d4-d3ce2f366c3c"
+  }
+}
